@@ -207,7 +207,6 @@ header {
 		float: none;
 		position: absolute;
 		overflow: hidden;
-		
 		top: 116px;
 		right: 0;
 		left: 0;
@@ -226,6 +225,7 @@ header {
 	}
 
 	#menu a {
+		padding: 12px 0px;
 		color: #FFFFFF;
 	}
 
