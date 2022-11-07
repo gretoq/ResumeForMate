@@ -4,31 +4,49 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/style/reset.css">
+	<!-- <link rel="stylesheet" href="/style/reset.css"> -->
 	<link rel="stylesheet" href="/style/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 	<title>Hi, I`m Artem Dovhun</title>
 </head>
 <body>
 
 	<!-- This block with logo, navigation, and main button -->
 	<header>
-		<div class="logo">
-			<a href="/index.html"><img src="/img/logo.png" alt="logo"></a>
-		</div>
 		<nav class="container">
+			
+			<a class="logo" href="/index.html"><img src="/img/logo.png" alt="logo"></a>
+
+			<div class="nav-toggle"><span></span></div>
+
+			<div id="button">
+				<a class="header-button" href="/index.html">Contact Me</a>
+			</div>
 			<ul id="menu">
+
 				<li><a href="">Skills</a></li>
 				<li><a href="">Projects</a></li>
 				<li><a href="">About Me</a></li>
 			</ul>
+			
+			
 		</nav>
-		<div class="button">
-			<a class="header-button">Contact Me</a>
-		</div>
 	</header>
+	
+	<script>
+		// $('.nav-toggle').on('click', function(){
+		// $('#menu').toggleClass('active');
+		// });
+
+		$('.nav-toggle').on('click', function () {
+			$('#menu').toggleClass('active');
+		});
+
+	</script>
 	
 </body>
 </html>
