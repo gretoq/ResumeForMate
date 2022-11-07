@@ -37,7 +37,7 @@ header:after, .container:after, footer:after {
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1160px;
-	padding: 24px 15px;
+	padding: 24px 16px;
 }
 
 /* ///Style for header START/// */
@@ -45,7 +45,7 @@ header:after, .container:after, footer:after {
 header {
 	width: 100%;
 	/* box-shadow: 3px 3px 1px rgba(0, 0, 0, .05); */
-	padding: 15px 0;
+	padding: 16px 0;
 	margin-bottom: 30px;
 	position: relative;
 }
@@ -57,17 +57,24 @@ header {
 
 .logo:hover {
 	transform: scale(1.2);
+	/* box-shadow: 2px 1px #2aaee242; */
+}
+
+.logo:active {
+	transform: scale(0.9);
+	
 }
 
 .nav-toggle {
 	display: none;
 	position: relative;
 	float: right;
-	width: 40px;
-	height: 40px;
+	width: 52px;
+	height: 52px;
 	margin-left: 20px;
 	background: #000000;
 	cursor: pointer;
+	margin-top: 6px;
 }
 
 .nav-toggle:hover {
@@ -78,7 +85,7 @@ header {
 .nav-toggle span {
 	display: block;
 	position: absolute;
-	top: 19px;
+	top: 25px;
 	left: 8px;
 	right: 8px;
 	height: 2px;
@@ -91,16 +98,16 @@ header {
 	display: block;
 	left: 0;
 	width: 100%;
-	height: 2px;
+	height: 3px;
 	background: #ffffffe5;
 }
 
 .nav-toggle span:before {
-	top: -10px;
+	top: -16px;
 }
 
 .nav-toggle span:after {
-	bottom: -10px;
+	bottom: -16px;
 }
 
 #menu.active {
@@ -114,6 +121,7 @@ header {
 #menu li {
 	display: inline-block;
 	margin-right: 30px;
+	margin-top: 20px;
 }
 
 #menu a {
@@ -126,9 +134,13 @@ header {
 	line-height: 150%;
 }
 
-#menu a:hover {
+#menu a:hover  {
 	color: #2aaee2e5;
 	transform: scale(1.2);
+}
+
+#menu a:active {
+	transform: scale(0.9);
 }
 
 #menu li:last-child {
@@ -140,10 +152,11 @@ header {
 	display: inline-block;
 	margin-left: 48px;
 	position: relative;
+	margin-top: 20px;
 }
 
 .header-button {
-	padding: 30px 40px;
+	padding: 20px 28px;
 	background: #696969;
 	border-radius: 50px;
 	color: #FFFFFF;
@@ -157,6 +170,11 @@ header {
 #button:hover, #button a:hover {
 	color: #2aaee2e5;
 	transform: scale(1.2);
+}
+
+#button:active, #button a:active {
+	transform: scale(0.8);
+	box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.3);
 }
 /* ///Style for header END/// */
 
@@ -176,6 +194,7 @@ header {
 
 	.nav-toggle {
 		display: block;
+		/* margin: auto; */
 	}
 
 	header {
@@ -202,6 +221,7 @@ header {
 		text-align: center;
 		border-bottom: 1px solid #EBEBE3;
 		margin-right: 0;
+		margin-top: 0;
 		
 	}
 
@@ -209,9 +229,7 @@ header {
 		color: #FFFFFF;
 	}
 
-	#button {
-		display: none;
-	}
+	
 }
 
 @media (max-width: 480px) {
@@ -228,6 +246,9 @@ header {
 		top: 116px;
 	}
 
+	#button {
+		display: none;
+	}
 
 
 }
