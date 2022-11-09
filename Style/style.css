@@ -1,3 +1,11 @@
+* {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
 *,
 *:after,
 *:before {
@@ -9,6 +17,7 @@
 
 html {
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 ul {
@@ -27,6 +36,7 @@ img {
 
 body {
 	font-family: 'Oxygen', sans-serif;
+	overflow-x: hidden;
 }
 
 header:after, .container:after, footer:after {
@@ -40,7 +50,7 @@ header:after, .container:after, footer:after {
 .container {
 	margin: 0 auto;
 	width: 100%;
-	max-width: 1160px;
+	max-width: 1440px;
 	padding: 24px 16px;
 }
 
@@ -188,6 +198,7 @@ header {
 	width: 100%;
 	max-width: 1000px;
 	padding: 24px 16px;
+	margin-top: 80px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -198,6 +209,10 @@ header {
 	flex-direction: row;
 	justify-content: center;
 	padding: 4px;
+}
+
+.container-flex .body-button {
+	margin-top: 80px;
 }
 
 .button-contact {
@@ -259,6 +274,7 @@ header {
 /* ///Style for second page START/// */
 .container-flex-experiment {
 	padding: 140px 24px;
+	padding-bottom: 0px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -329,6 +345,78 @@ header {
 }
 /* ///Style for second page END/// */
 
+/* ///Style for third page START/// */
+.work-list {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.work-list img {
+	transform: scale(0.9);
+	border-radius: 20px;
+}
+
+.work-list img:hover {
+	box-shadow: rgba(9, 163, 184, 0.3) 0px 19px 38px, rgba(3, 155, 155, 0.22) 0px 15px 12px;
+	transform: scale(1.05);
+}
+
+.work-list img:active {
+	transform: scale(0.8);
+}
+
+.container-flex-experiment .work-list:nth-child(3) {
+	margin-bottom: 28px;
+}
+/* ///Style for third page END/// */
+
+/* ///Style for fourth page START/// */
+.remind-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.socialmedias {
+	margin-top: 24px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.socialmedias img:hover {
+	box-shadow: rgba(9, 163, 184, 0.3) 0px 19px 38px, rgba(3, 155, 155, 0.22) 0px 15px 12px;
+	transform: scale(1.2);
+}
+
+.socialmedias img {
+	border-radius: 100%;
+}
+
+.socialmedias img:active {
+	transform: scale(0.8);
+}
+
+.container-flex-experiment .body-button {
+	margin-top: 80px;
+}
+
+
+.remind-description .fp-title {
+	width: 808px;
+}
+
+.remind-description .fp-description {
+	width: 610px;
+	font-family: 'Oxygen';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 150%;
+}
+/* ///Style for fourth page END/// */
 
 
 /* ///Style @media START/// */
@@ -385,13 +473,17 @@ header {
 	.fp-content {
 		padding: 0px 60px;
 		flex-direction: column-reverse;
-		justify-content: center;
+		align-items: center;
+	}
+	
+	.fp-title {
+		text-align: center;
 	}
 
 	.myphoto {
 		align-self: center;
-		width: 211px;
-		height: 266px;
+		/* width: 211px;
+		height: 266px; */
 		margin-bottom: 40px;
 	}
 
@@ -400,11 +492,11 @@ header {
 	}
 
 	.secondary-title {
-		font-size: 28px;
+		font-size: 36px;
 	}
 
 	.second-description {
-		font-size: 18px;
+		font-size: 24px;
 	}
 
 	.container-skills {
@@ -431,6 +523,37 @@ header {
 	.skill-card {
 		width: 380px;
 		height: 380px;
+	}
+
+	.container-flex-experiment {
+		padding: 80px 24px;
+	}
+
+	.work-list {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.work-list img {
+		transform: scale(1.2);
+	}
+
+	.work-list a {
+		margin-bottom: 80px;
+	}
+
+	.container-flex-experiment .work-list:nth-child(3) {
+		margin-bottom: 0px;
+	}
+
+	.remind-container {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	.remind-description .fp-title {
+		width: 684px;
+		margin-top: 24px;
 	}
 	
 }
@@ -467,6 +590,20 @@ header {
 		font-size: 18px;
 	}
 
+	.remind-description .fp-title {
+		width: 304px;
+		font-size: 28px;
+	}
+
+	.remind-description .fp-description{
+		width: 304px;
+		font-size: 18px;
+	}
+
+	.container-flex-experiment .body-button {
+		margin-top: 40px;
+	}
+
 	.fp-content {
 		padding: 0px 16px;
 	}
@@ -495,12 +632,40 @@ header {
 		width: 330px;
 	}
 
+	.secondary-title {
+		font-size: 28px;
+	}
+
+	.second-description {
+		font-size: 18px;
+	}
+
 	.skill-title {
 		font-size: 24px;
 	}
 
 	.skill-list {
 		font-size: 18px;
+	}
+
+	.container-flex-experiment {
+		padding: 40px 24px;
+	}
+
+	.work-list img {
+		transform: scale(0.7);
+	}
+
+	.work-list img:hover {
+		transform: scale(0.75);
+	}
+
+	.work-list a {
+		margin-bottom: -60px;
+	}
+
+	#projects {
+		margin-bottom: -60px;
 	}
 }
 
