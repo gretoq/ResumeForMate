@@ -16,18 +16,17 @@
 <body>
 
 	<!-- This block with logo, navigation, and main button -->
-	<header>
+	<header id="main">
 		<nav class="container">
 			
-			<a class="logo" href="/index.html"><img src="/img/logo.png" alt="logo"></a>
+			<a class="logo" href="#main"><img src="/img/logo.png" alt="logo"></a>
 
-			<div class="nav-toggle"><span></span></div>
+			<div  class="nav-toggle"><span></span></div>
 
 			<div id="button">
-				<a class="header-button" href="/index.html">Contact Me</a>
+				<a class="header-button" href="#footer">Contact Me</a>
 			</div>
 			<ul id="menu">
-
 				<li><a href="#skills">Skills</a></li>
 				<li><a href="#projects">Projects</a></li>
 				<li><a href="#aboutme">About Me</a></li>
@@ -47,7 +46,7 @@
 			<img class="myphoto" src="/img/fp-image.svg" alt="first-page-image">
 		</div>
 		<div class="body-button">
-			<a class="header-button" href="/index.html">Contact Me</a>
+			<a class="header-button" href="#footer">Contact Me</a>
 		</div>
 	</div>
 
@@ -123,15 +122,13 @@
 		</div>
 	</div>
 
+	<!-- This block with information about me -->
 	<div class="container-flex-experiment">
 		<div class="remind-container">
 			<div class="remind-description">
 				<h1 id="aboutme" class="fp-title">Just to remind you, I’m Artem. A <span class="color-grey">FRONTEND</span> && <span	class="color-lightgrey">BACKEND Developer In Future</span> from Kharkiv, Ukraine.</h1>
 				<p class="fp-description">My goal to create qualitative applications and thus improve my technical skills.</p>
 				<p class="fp-description">After 5 years I`ll be a strong middle in Frontend and Backend development.</p>
-				<!-- <div class="body-button">
-					<a class="header-button" href="/index.html">Download Resume</a>
-				</div> -->
 			</div>
 			<div class="photo-socialmedia">
 				<img src="/img/fp-image.svg" alt="myphoto">
@@ -147,16 +144,48 @@
 		</div>
 	</div>
 	
+	<!-- This block includes a little CTA and short information about me -->
+	<footer id="footer">
+		<div class="remind-container">
+			<div class="remind-description">
+				<a href="#main"><img class="logo-footer" src="/img/logo.png" alt="logo"></a>
+				<h3 class="footer-title">Dovhun Artem</h3>
+				<h4>Full Stack Developer</h4>
+				<h4>Email me</h4>
+				<a class="but-mail" href="mailto:dovhun3d@gmail.com"><span>dovhun3d@gmail.com</span></a>
+			</div>
+			<div class="remind-description">
+				<h2 class="secondary-title">Lets Talk!</h2>
+				<p class="lastdescription">Together we will develop a brand and a platform for online sales Website, Landing, Online store, Portal, Business card. Let's build a process automation system in your business CRM, Telephony. We will create a lead generation system using PPC, SEO, SMM internet marketing tools.</p>
+			</div>
+		</div>
+		<div class="remind-container">
+			<ul id="footermenu">
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#aboutme">About Me</a></li>
+			</ul>
+			<div class="socialmedias">
+				<a href="https://github.com/gretoq"><img src="/img/github.svg" alt="github"></a>
+				<a href="https://www.linkedin.com/in/dovhun"><img src="/img/linkedin.svg" alt="linkedin"></a>
+				<a href="https://www.instagram.com/gretoq/"><img src="/img/instagram.svg" alt="instagram"></a>
+			</div>
+			<p class="motto">Make love, not war...</p>
+		</div>
+	</footer>
+
+	<!-- This block includes js code for click tab when viewport is a mobile screen -->
 	<script>
 		// $('.nav-toggle').on('click', function(){
 		// $('#menu').toggleClass('active');
 		// });
 
-		$('.nav-toggle').on('click', function () {
-			$('#menu').toggleClass('active');
-		});
+		// $('.nav-toggle').on('click', function () {
+		// 	$('#menu').toggleClass('active');
+		// });
 
 	</script>
+	<script src="/javascript/main.js"></script>
 	
 </body>
 </html>
