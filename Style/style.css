@@ -125,7 +125,7 @@ header {
 }
 
 #menu.active {
-	max-height: 180px;
+	max-height: 210px;
 }
 
 #menu {
@@ -159,6 +159,11 @@ header {
 
 #menu li:last-child {
 	margin-right: 0;
+}
+
+.page-language {
+	background: #696969;
+	padding: 4px 4px;
 }
 
 #button {

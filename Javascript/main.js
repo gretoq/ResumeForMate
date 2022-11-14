@@ -21,7 +21,7 @@ const closeNav = () => {
 
 console.log(navMenu.classList == 'active');
 
-navBtn.addEventListener('click', () => {  // Add action by click on navBtn '.nav-toggle' AND if navigation is working then close navigation menu
+navBtn.addEventListener('click', () => {	// Add action by click on navBtn '.nav-toggle' AND if navigation is working then close navigation menu
 	if (navMenu.classList == 'active') {
 		closeNav();
 	} else {
@@ -120,4 +120,29 @@ window.onclick = function (e) {
 		refreshFormFields();
 	} 
 };
+
+
+// I try change language in my page
+
+const languageBtn = document.querySelector('#language-btn');
+const UAlanguage = document.querySelector('.language-ua');
+const ENGlanguage = document.querySelector('.language-eng');
+
+const viewUaLanguage = () => {
+	UAlanguage.style.display = 'block';
+	ENGlanguage.style.display = 'none';
+}
+
+const viewEngLanguage = () => {
+	ENGlanguage.style.display = 'block';
+	UAlanguage.style.display = 'none';
+}
+
+window.onclick = () => {
+	if (UAlanguage.style.display == 'none') {
+		viewUaLanguage();
+	} else {
+		viewEngLanguage();
+	}
+}
 	
