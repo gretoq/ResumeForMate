@@ -566,6 +566,7 @@ footer .remind-container:last-child {
 	pointer-events: none;
 
 	transition: all 0.3s ease-in-out;
+	cursor: pointer;
 }
 
 .modal-form {
@@ -578,6 +579,7 @@ footer .remind-container:last-child {
 	background: #fff;
 	padding: 32px 92px 32px 92px;
 	position: relative;
+	cursor: default;
 	border-radius: 32px;
 }
 
