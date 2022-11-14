@@ -140,7 +140,7 @@
 			</div>
 		</div>
 		<div class="body-button">
-			<a class="header-button" href="/index.html">Download Resume</a>
+			<a class="header-button" id="open-modal">Get my Resume</a>
 		</div>
 	</div>
 	
@@ -174,17 +174,38 @@
 		</div>
 	</footer>
 
-	<!-- This block includes js code for click tab when viewport is a mobile screen -->
-	<script>
-		// $('.nav-toggle').on('click', function(){
-		// $('#menu').toggleClass('active');
-		// });
+	<!-- This is a modal window with form for getting user email -->
+	<div id="form-modal" class="modal-bgd">
+		<div class="modal-form-container">
+			<button class="close-btn">x</button>
+			<form id="form" action="#" class="modal-form" data-netlify="true">
+				<img src="/img/logo.png" alt="logo">
+				<h4 class="modal-form-title">Please, give me your mail</h4>
+				<p class="modal-form-descr">and i`ll give you my <span class="color-grey">Resume</span></p>
+				<div class="modal-form-field">
+					<label for="user-name" class="modal-field-name">Your name</label>
+					<input autofocus required type="text" id="user-name" class="modal-field-input" name="Name" placeholder="Name">
+				</div>
+				<div class="modal-form-field">
+					<label for="user-email" class="modal-field-name">Your email</label>
+					<input type="email" class="modal-field-input" id="user-email" name="Email" placeholder="example@gmail.com" required>
+				</div>
+				<button class="modal-form-button" id="launch-btn">Submit</button>
+			</form>
+		</div>
+	</div>
 
-		// $('.nav-toggle').on('click', function () {
-		// 	$('#menu').toggleClass('active');
-		// });
+	<!-- This is a modal window for user notification that his form has been submitted -->
+	<div id="success-modal" class="modal-bgd">
+		<div class="modal-form modal-form-container">
+			<button class="close-btn">x</button>
+			<h4 class="modal-form-title">Thank you, wait my Resume on your Email</h4>
+			<p class="modal-form-descr modal-descr">Have a good day!</p>
+		</div>
+	</div>
 
-	</script>
+
+	<!-- This block includes js code for click tab when viewport is a mobile screen and for getting my Resume -->
 	<script src="/javascript/main.js"></script>
 	
 </body>
