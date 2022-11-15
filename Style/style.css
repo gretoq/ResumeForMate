@@ -364,6 +364,10 @@ header {
 	border-radius: 20px;
 }
 
+.border-box {
+	border: 1px solid black;
+}
+
 .work-list img:hover {
 	box-shadow: rgba(9, 163, 184, 0.3) 0px 19px 38px, rgba(3, 155, 155, 0.22) 0px 15px 12px;
 	transform: scale(1.05);
