@@ -125,7 +125,7 @@ header {
 }
 
 #menu.active {
-	max-height: 210px;
+	max-height: max-content;
 }
 
 #menu {
