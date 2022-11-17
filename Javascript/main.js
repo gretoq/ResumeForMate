@@ -53,9 +53,14 @@ const launchBtn = document.querySelector('#launch-btn'); // Selecting button whi
 const closeBtns = document.querySelectorAll('.close-btn'); // Selecting button which will close our modal windows
 
 // Now we adding listener for button 'open-modal' and give him command what to do, if it will be clicked
+// Add variation who activate our input field User Name
+const userNameField = document.querySelector('#user-name');
+console.log(`userNameField`);
+console.log(userNameField);
 
 openModalFormBtn.addEventListener('click', () => {
 	formModal.classList.add(MODAL_WINDOW_ACTIVE);	// Adding class 'modal window active' if the button will be clicked
+	userNameField.focus();
 });
 
 // Creating functions for close modal windows (form and notification) AND open window 'success modal'
@@ -122,27 +127,27 @@ window.onclick = function (e) {
 };
 
 
-// I try change language in my page
+// I try change language in my page (multilanguage site)
 
-const languageBtn = document.querySelector('#language-btn');
-const UAlanguage = document.querySelector('.language-ua');
-const ENGlanguage = document.querySelector('.language-eng');
+// const languageBtn = document.querySelector('#language-btn');
+// const UAlanguage = document.querySelector('.language-ua');
+// const ENGlanguage = document.querySelector('.language-eng');
 
-const viewUaLanguage = () => {
-	UAlanguage.style.display = 'block';
-	ENGlanguage.style.display = 'none';
-}
+// const viewUaLanguage = () => {
+// 	UAlanguage.style.display = 'block';
+// 	ENGlanguage.style.display = 'none';
+// }
 
-const viewEngLanguage = () => {
-	ENGlanguage.style.display = 'block';
-	UAlanguage.style.display = 'none';
-}
+// const viewEngLanguage = () => {
+// 	ENGlanguage.style.display = 'block';
+// 	UAlanguage.style.display = 'none';
+// }
 
-window.onclick = () => {
-	if (UAlanguage.style.display == 'none') {
-		viewUaLanguage();
-	} else {
-		viewEngLanguage();
-	}
-}
+// window.onclick = () => {
+// 	if (UAlanguage.style.display == 'none') {
+// 		viewUaLanguage();
+// 	} else {
+// 		viewEngLanguage();
+// 	}
+// }
 	

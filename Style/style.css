@@ -20,10 +20,6 @@ html {
 	overflow-x: hidden;
 }
 
-ul {
-	/* list-style: none; */
-}
-
 a {
 	text-decoration: none;
 	outline: none;
@@ -552,10 +548,6 @@ footer ul {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 23px;
-}
-
-footer .remind-container:last-child {
-	/* align-items: baseline; */
 }
 /* ///Style for footer part page END/// */
 
